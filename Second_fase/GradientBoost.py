@@ -6,5 +6,6 @@ def main():
     gbt.fit(X_test,Y_test)
     score=gbt.score(X_test,Y_test)
     print(score)
+
 if __name__ == "__main__":
     main()

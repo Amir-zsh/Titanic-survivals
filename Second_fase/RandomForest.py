@@ -5,9 +5,10 @@ def main():
     rf = ensemble.RandomForestClassifier(n_estimators=100)
     score=0
     for i in range(20):
-        rf.fit(X_test,Y_test)
-        score+=rf.score(X_train,Y_train)
+        rf.fit(X_train,Y_train)
+        score+=rf.score(X_test,Y_test)
     print(score/20)
+
 
 if __name__ == "__main__":
     main()
